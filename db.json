@@ -1,0 +1,29 @@
+{
+    "posts" : [
+        {
+            "id": 1,
+            "title": "Vinyl is the new Record",
+            "image": "https://images.unsplash.com/photo-1603850121303-d4ade9e5ba65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHZpbnlsJTIwcmVjb3JkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            "author": "Mia Zapata",
+            "date": "Dec 6, 2020",
+            "content": "Did you know records are made out of vinyl?. I asked like 50 people in a restaurant and on then on the street, after they kicked me out of the restaurant, and only 100 of them knew that albums and records are not the same thing."
+        },
+        {
+            "id": 2,
+            "title": "Set up the perfect bathroom recording mic",
+            "image": "https://images.unsplash.com/photo-1646930546789-d5a37c9b99e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWljcm9waG9uZSUyMGJhdGhyb29tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            "author": "Scantilly Lace",
+            "date": "March 21, 2021",
+            "content": "When you need to record vocals but had some dodgy thai food. Brings a whole new meaning to the phrase 'on air' now don't it....."
+        },
+        {
+            "id": 3,
+            "title": "My dad's studio can beat up your dad's studio",
+            "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmVjb3JkaW5nJTIwc3R1ZGlvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            "author": "Anonymouse",
+            "date": "June 7, 2022",
+            "content": "nanner nanner boo boo stick your head in doo doo. And a bunch of other childish things to say that only an adult would say to make a child cry beacuse they have no soul. You know who had soul?.....Chester Copperpot...."
+        }
+
+    ]
+}
