@@ -13,18 +13,27 @@ body {
     max-width: 1200px;
     padding: 10px 16px;
     margin: auto;
-}
+    display: flex;
+    justify-content:space-evenly;
 
+}
+.container > h2:hover {
+    text-decoration: underline;
+}
 .nav {
-    padding: 0 10px;
+    padding: 10px 10px;
     color: whitesmoke;
+   
+   
 }
 /* home nav link */
 a {
     text-decoration: none;
     color: whitesmoke;
 }
-
+a:hover{
+    text-decoration: underline;
+}
 .navImage {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
     url(https://images.unsplash.com/photo-1531651750200-b2c2b3ddc876?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmVjb3JkaW5nJTIwY29uc29sZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
@@ -43,3 +52,64 @@ a {
 .app {
     color: white
 }
+
+.postList {
+    padding: 16px 0;
+    color:white
+}
+
+.post-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+}
+
+.card {
+    border-radius: 5px;
+    border: 1px solid white
+    
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: 666;
+    margin-bottom: 10px;
+}
+
+.post h1 {
+    padding: 15px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.post-content {
+    max-width: 900px;
+    padding: 0 16px;
+    margin: auto;
+    color: whitesmoke
+}
+/* tablet */
+@media(max-width: 760px) {
+    .post-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .navImage {
+        height: 300px;
+        font-size: 40px;
+    }
+}
+/* mobile */
+@media(max-width: 600px) {
+    .post-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+

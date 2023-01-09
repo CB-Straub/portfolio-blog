@@ -1,4 +1,4 @@
- const blogReducer =  ( state, action ) => {
+ export default ( state, action ) => {
     switch (action.type) {
         case 'SET_POSTS':
             return {
@@ -25,5 +25,3 @@
     } 
      
 }
-
-export default blogReducer

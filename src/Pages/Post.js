@@ -1,8 +1,55 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
+import BlogContext from '../context/blogContent'
+import { useParams } from 'react-router-dom'
 
 const Post = () => {
+
+  const blogContext = useContext(BlogContext)
+  const { getPostsById, currentBlogPost } = blogContext
+
+  let { postId } = useParams()
+
+  useEffect(() => {
+    getPostsById(postId)
+  },[])
+
+
   return (
-    <div>Post</div>
+
+    <div className='post'>
+      {
+        currentBlogPost ? (
+          <>
+            <div className='post-image' style={{
+              width: '100%',
+              height: '400px',
+              backgroundImage: `url('${ currentBlogPost.image}')`,
+              backgrounPosition: 'center',
+              backgroundSize: 'cover', 
+              backgroundRepeat: 'no-repeat',
+              position:'relative',
+              borderTopRightRadius:'5px',
+              borderTopLeftRadius: '5px',
+              imageResolution: '24dpi',
+             
+            }}>
+           </div>
+
+           <div className='post-content'>
+             <h1> {currentBlogPost.title}</h1>
+             <p> {currentBlogPost.content}</p>
+           </div>
+          
+          
+          
+          </>
+        ) : (
+
+          <div> ...Loading  </div>
+        )
+      }
+
+    </div>
   )
 }
 

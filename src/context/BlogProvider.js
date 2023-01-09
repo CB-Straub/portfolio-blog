@@ -2,10 +2,10 @@ import React, { useReducer } from "react";
 import BlogContext from './blogContent'
 import blogReducer from './blogReducer'
 
-const BlogProvider = props => {
+const BlogProvider = (props) => {
 
     const initialState = {
-        blogPosts : [],
+        blogPosts:[],
         currentBlogPost: null,
         loading: true
     }
@@ -18,7 +18,7 @@ const BlogProvider = props => {
             const res = await fetch('/posts')
             const data = await res.json()
             dispatch({ type: 'REQUEST_FINISHED'})
-            dispatch({ type: 'SET_POSTS', payload: data})
+            dispatch({ type: 'SET_POSTS', payload:data})
             
         } catch (error) {
             console.log(error)
@@ -26,7 +26,7 @@ const BlogProvider = props => {
         }
     };
 
-    const getPostsById = async id => {
+    const getPostsById = async (id) => {
         try {
             dispatch({ type: 'SENDING_REQUEST'})
             const res = await fetch(`/posts/${id}`)
