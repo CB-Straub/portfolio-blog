@@ -1,4 +1,4 @@
-A minimially viable fronend blog project built with React v17, Json-Server(as a development prototype API mockup for data}, using React Context for state manangement.  
+A minimially viable frontend blog project built with React v17, Json-Server(as a development prototype API mockup for data}, using React Context for state manangement.  
 
 This is the very first react app I built....and is a work in progress. Problems/Solutions that will be addressed:  
 
