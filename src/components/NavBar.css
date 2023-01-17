@@ -1,0 +1,16 @@
+
+.navbar-nav {
+    max-width: 1200px;
+    padding: 10px 16px;
+    margin: auto;
+    display: flex;
+    justify-content:space-evenly;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+nav-item {
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
