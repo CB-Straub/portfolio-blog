@@ -22,7 +22,7 @@ const Post = () => {
           <>
             <div className='post-image' style={{
               width: '100%',
-              height: '400px',
+              height: '600px',
               backgroundImage: `url('${ currentBlogPost.image}')`,
               backgrounPosition: 'center',
               backgroundSize: 'cover', 
@@ -36,8 +36,11 @@ const Post = () => {
            </div>
 
            <div className='post-content'>
-             <h1> {currentBlogPost.title}</h1>
-             <p> {currentBlogPost.content}</p>
+                <p>{currentBlogPost.author}</p>
+                <p>{currentBlogPost.date}</p>
+                <h1> {currentBlogPost.title}</h1>
+                <p> {currentBlogPost.content}</p>
+
            </div>
           
           

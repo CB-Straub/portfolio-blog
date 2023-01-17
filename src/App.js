@@ -11,6 +11,8 @@ import BlogProvider from './context/BlogProvider'
 import Home from './Pages/Home'
 import Post from './Pages/Post'
 
+
+
 //css styles
 import './App.css';
 
@@ -24,11 +26,17 @@ function App() {
              <Router>
 
                  <NavBar />
+                 
 
                  <Switch>
                     <Route path='/' exact component={Home}/>
                     <Route path='/:postId' exact component={Post}/>
+                    
+                   
                 </Switch>
+
+               
+              
                 
               </Router>
       

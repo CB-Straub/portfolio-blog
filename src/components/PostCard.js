@@ -6,7 +6,7 @@ const PostCard = (props) => {
     <div className='card'>
         <div className='card-image' style={{
           width: '100%',
-          height: '200px',
+          height: '300px',
           backgroundImage: `url('${props.image}')`,
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
