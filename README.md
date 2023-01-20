@@ -6,6 +6,6 @@ I wanted to learn how to use json-server as a mock API database so I built this 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-![Screenshot 2023-01-12 at 11-52-42 React App](https://user-images.githubusercontent.com/72115377/212155269-ab29acaa-1537-488e-a5a3-0ef0ffb00e0a.png)
-![Screenshot 2023-01-12 at 11-53-21 React App](https://user-images.githubusercontent.com/72115377/212155351-d0d00ea7-8c94-4ce1-84f8-472d5575abe8.png)
-![Screenshot 2023-01-12 at 11-53-51 React App](https://user-images.githubusercontent.com/72115377/212155392-4a014fa0-8c16-4c4f-86cb-6bc7404601f5.png)
+![Screenshot 2023-01-20 at 15-04-18 React App](https://user-images.githubusercontent.com/72115377/213813760-c1fc19c3-8851-40b9-88f5-4a65963869e6.png)
+![Screenshot 2023-01-20 at 15-04-57 React App](https://user-images.githubusercontent.com/72115377/213813774-7ab56a75-73fe-4c70-80cd-2c2cfd633ded.png)
+![Screenshot 2023-01-20 at 15-05-16 React App](https://user-images.githubusercontent.com/72115377/213813789-1f8454a8-32fb-4289-9526-d8fde8d723b5.png)
