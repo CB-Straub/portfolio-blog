@@ -15,12 +15,12 @@ const BlogProvider = (props) => {
     const getPosts = async () => {
         try {
             dispatch({ type: 'SENDING_REQUEST'})
-            const res = await fetch('/posts')
+            const res = await fetch(`/posts`)
             const data = await res.json()
             dispatch({ type: 'REQUEST_FINISHED'})
             dispatch({ type: 'SET_POSTS', payload:data})
             
-        } catch (error) {
+        } catch(error) {
             console.log(error)
             
         }
