@@ -25,7 +25,7 @@ const PostList = () => {
       <div className='container'>
         {/* <h2>Posts</h2> */}
         {/* { */}
-          // !loading ? (
+          {/* !loading ? (
             <div className='post-grid-container'>
                 {
                   posts.map(( posts, i ) => {
@@ -42,10 +42,10 @@ const PostList = () => {
                 }
 
             </div>
-          ) : (
+          {/* ) : (
             <div>...Loading</div>
           )
-        {/* } */}
+        } */}
       </div>
  </div>
   )
