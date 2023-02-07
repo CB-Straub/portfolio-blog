@@ -20,10 +20,10 @@ const BlogProvider = (props) => {
             const res = await fetch(`../posts`)
             const data = await res.json()
             dispatch({ type: 'REQUEST_FINISHED'})
-            dispatch({ type: 'SET_POSTS', payload:data.JSON.stringify(data)})
+            dispatch({ type: 'SET_POSTS', payload:data})
             
         } catch(error) {
-            console.log(error)
+            console.log(error.json.posts)
             
         }
     };
@@ -34,10 +34,10 @@ const BlogProvider = (props) => {
             const res = await fetch(`../posts/${id}`)
             const data = await res.json()
             dispatch({ type: 'REQUEST_FINISHED'})
-            dispatch({ type: 'SET_POST', payload: data.JSON.stringify(data)})
+            dispatch({ type: 'SET_POST', payload: data})
 
         } catch (error) {
-            console.log(error)
+            console.log(error.json.posts)
             
         }
     }
