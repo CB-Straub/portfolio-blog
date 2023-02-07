@@ -5,7 +5,9 @@ import blogReducer from './blogReducer'
 const BlogProvider = (props) => {
 
     const initialState = {
+        //blogPosts changed to posts
         posts:[],
+        // currentBlogPost changed to currentPost
         currentPost: null,
         loading: true
     }
@@ -21,7 +23,7 @@ const BlogProvider = (props) => {
             dispatch({ type: 'SET_POSTS', payload:data})
             
         } catch(error) {
-            console.log(error)
+            console.log(error.message)
             
         }
     };
@@ -35,7 +37,7 @@ const BlogProvider = (props) => {
             dispatch({ type: 'SET_POST', payload: data})
 
         } catch (error) {
-            console.log(error)
+            console.log(error.message)
             
         }
     }
