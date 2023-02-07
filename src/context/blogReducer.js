@@ -3,7 +3,7 @@
         case 'SET_POSTS':
             return {
                 ...state,
-                blogPosts: action.payload
+                posts: action.payload
             };
         case 'SET_POST':
             return {

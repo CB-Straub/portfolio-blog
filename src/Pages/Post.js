@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import BlogContext from '../context/blogContent'
 import { useParams } from 'react-router-dom'
+// import posts from './db.json'
 
 const Post = () => {
 
