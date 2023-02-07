@@ -23,7 +23,7 @@ const BlogProvider = (props) => {
             dispatch({ type: 'SET_POSTS', payload:data})
             
         } catch(error) {
-            console.log()
+           
             
         }
     };
@@ -37,7 +37,7 @@ const BlogProvider = (props) => {
             dispatch({ type: 'SET_POST', payload: data})
 
         } catch (error) {
-            console.log()
+            
             
         }
     }
