@@ -18,7 +18,7 @@ const BlogProvider = (props) => {
         try {
             dispatch({ type: 'SENDING_REQUEST'})
             const res = await fetch(`../posts`)
-            const data = await res.json.toString()
+            const data = await res.json(toString)
             dispatch({ type: 'REQUEST_FINISHED'})
             dispatch({ type: 'SET_POSTS', payload:data})
             
@@ -32,7 +32,7 @@ const BlogProvider = (props) => {
         try {
             dispatch({ type: 'SENDING_REQUEST'})
             const res = await fetch(`../posts/${id}`)
-            const data = await res.json.toString()
+            const data = await res.json(toString)
             dispatch({ type: 'REQUEST_FINISHED'})
             dispatch({ type: 'SET_POST', payload: data})
 
