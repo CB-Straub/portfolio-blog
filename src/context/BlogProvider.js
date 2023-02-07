@@ -5,8 +5,8 @@ import blogReducer from './blogReducer'
 const BlogProvider = (props) => {
 
     const initialState = {
-        blogPosts:[],
-        currentBlogPost: null,
+        posts:[],
+        currentPost: null,
         loading: true
     }
 
@@ -29,7 +29,7 @@ const BlogProvider = (props) => {
     const getPostsById = async (id) => {
         try {
             dispatch({ type: 'SENDING_REQUEST'})
-            const res = await fetch(`/posts/${id}`)
+            const res = await fetch(`../posts/${id}`)
             const data = await res.json()
             dispatch({ type: 'REQUEST_FINISHED'})
             dispatch({ type: 'SET_POST', payload: data})
@@ -43,8 +43,10 @@ const BlogProvider = (props) => {
     return (
         <BlogContext.Provider
             value={{
+                // blogPosts: state.posts
                 posts: state.posts,
-                currentBlogPost: state.currentBlogPost,
+                // currentBlogPost: state.currentBlogPost,
+                currentPost: state.currentPost,
                 loading: state.loading,
                 getPosts: getPosts,
                 getPostsById: getPostsById

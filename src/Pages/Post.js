@@ -2,11 +2,12 @@ import React, { useContext, useEffect } from 'react'
 import BlogContext from '../context/blogContent'
 import { useParams } from 'react-router-dom'
 // import posts from './db.json'
+import{ posts } from '../posts'
 
 const Post = () => {
 
   const blogContext = useContext(BlogContext)
-  const { getPostsById, currentBlogPost } = blogContext
+  const { getPostsById, currentPost } = blogContext
 
   let { postId } = useParams()
 
@@ -19,12 +20,13 @@ const Post = () => {
 
     <div className='post'>
       {
-        currentBlogPost ? (
+        currentPost ? (
           <>
             <div className='post-image' style={{
               width: '100%',
               height: '600px',
-              backgroundImage: `url('${ currentBlogPost.image}')`,
+              // backgroundImage: `url('${ currentBlogPost.image}')`,
+               backgroundImage: `url('${currentPost.image}')`,
               backgrounPosition: 'center',
               backgroundSize: 'cover', 
               backgroundRepeat: 'no-repeat',
@@ -37,10 +39,15 @@ const Post = () => {
            </div>
 
            <div className='post-content'>
-                <p>{currentBlogPost.author}</p>
+                {/* <p>{currentBlogPost.author}</p>
                 <p>{currentBlogPost.date}</p>
                 <h1> {currentBlogPost.title}</h1>
-                <p> {currentBlogPost.content}</p>
+                <p> {currentBlogPost.content}</p> */}
+                <p>{currentPost.author}</p>
+                <p>{currentPost.date}</p>
+                <h1> {currentPost.title}</h1>
+                <p> {currentPost.content}</p>
+
 
            </div>
           

@@ -8,7 +8,7 @@
         case 'SET_POST':
             return {
                 ...state,
-                currentBlogPost: action.payload
+                currentPost: action.payload
             }
         case 'SENDING_REQUEST':
             return {
