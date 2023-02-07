@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import BlogContext from '../context/blogContent'
 import { useParams } from 'react-router-dom'
 // import posts from './db.json'
-import{ posts } from '../posts'
+// import{ posts } from '../posts'  data is consumed through context now
 
 const Post = () => {
 
