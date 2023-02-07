@@ -11,7 +11,7 @@ import {posts} from '../posts'
 const PostList = () => {
 
   const blogContext = useContext(BlogContext)
-  const { getPosts , loading } = blogContext
+  const { getPosts, loading } = blogContext
 
   useEffect(() => {
     getPosts()
@@ -24,8 +24,8 @@ const PostList = () => {
     <div className='postList'>
       <div className='container'>
         {/* <h2>Posts</h2> */}
-        {
-          !loading ? (
+        {/* { */}
+          // !loading ? (
             <div className='post-grid-container'>
                 {
                   posts.map(( posts, i ) => {
@@ -45,7 +45,7 @@ const PostList = () => {
           ) : (
             <div>...Loading</div>
           )
-        }
+        {/* } */}
       </div>
  </div>
   )
