@@ -28,7 +28,7 @@ const BlogProvider = (props) => {
         }
     };
 
-    const getPostsById = async (id) => {
+    const getPostsById = async(id) => {
         try {
             dispatch({ type: 'SENDING_REQUEST'})
             const res = await fetch(`../posts/${id}`)

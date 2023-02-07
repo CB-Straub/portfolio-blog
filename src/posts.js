@@ -1,4 +1,4 @@
-export const posts =  [
+export const post =  [
     {
         "id": 1,
         "title": "Vinyl is the new Record",

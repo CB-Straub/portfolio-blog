@@ -2,9 +2,9 @@ import React, { useContext, useEffect } from 'react'
 import BlogContext from '../context/blogContent'
 import { useParams } from 'react-router-dom'
 // import posts from './db.json'
-// import{ posts } from '../posts'  data is consumed through context now
+import{ posts } from '../posts'  
 
-const Post = () => {
+const Post = (posts) => {
 
   const blogContext = useContext(BlogContext)
   const { getPostsById, currentPost } = blogContext
@@ -13,7 +13,7 @@ const Post = () => {
 
   useEffect(() => {
     getPostsById(postId)
-  },[])
+  },[posts])
 
 
   return (
@@ -26,7 +26,7 @@ const Post = () => {
               width: '100%',
               height: '600px',
               // backgroundImage: `url('${ currentBlogPost.image}')`,
-               backgroundImage: `url('${currentPost.image}')`,
+              backgroundImage: `url('${currentPost.image}')`,
               backgrounPosition: 'center',
               backgroundSize: 'cover', 
               backgroundRepeat: 'no-repeat',

@@ -5,7 +5,7 @@ import BlogContext from '../context/blogContent'
 
 //components
 import PostCard from './PostCard'
-import {posts} from '../posts'
+import {post} from '../posts'
 
 
 const PostList = () => {
@@ -17,7 +17,7 @@ const PostList = () => {
     getPosts()
   },[])
 
-  console.log(posts)
+  console.log(post)
 
   return (
 
@@ -28,15 +28,15 @@ const PostList = () => {
           {/* {/* !loading ? (  */}
             <div className='post-grid-container'>
                 {
-                  posts.map(( posts, i ) => {
+                  post.map(( post, i ) => {
                     return(
                       <PostCard
                         key={i}
-                        title={posts.title}
-                        image={posts.image}
-                        author={posts.author}
-                        date={posts.date}
-                        id={posts.id} />
+                        title={post.title}
+                        image={post.image}
+                        author={post.author}
+                        date={post.date}
+                        id={post.id} />
                     )
                   })
                 }
