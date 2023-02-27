@@ -2,9 +2,9 @@ import React, { useContext, useEffect } from 'react'
 import BlogContext from '../context/blogContent'
 import { useParams } from 'react-router-dom'
 // import posts from './db.json'
-// import { post } from '../posts'  
+// import { posts } from '../posts'  
 
-const Post = (post) => {
+const Post = (posts) => {
 
   const blogContext = useContext(BlogContext)
   const { getPostsById, currentPost } = blogContext
@@ -13,7 +13,7 @@ const Post = (post) => {
 
   useEffect(() => {
     getPostsById(postId)
-  },[post])
+  },[posts, currentPost])
 
 
   return (
