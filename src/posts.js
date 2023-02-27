@@ -2,7 +2,7 @@ export const post =  [
     {
         "id": 1,
         "title": "Vinyl is the new Record",
-        "image": "https://images.pexels.com/photos/5193731/pexels-photo-5193731.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "image":"https://images.pexels.com/photos/5193731/pexels-photo-5193731.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "author": "Mia Zapata",
         "date": "Dec 6, 2020",
         "content": "Did you know records are made out of vinyl?. I asked like 50 people in a restaurant and on then on the street, after they kicked me out of the restaurant, and only 100 of them knew that albums and records are not the same thing."

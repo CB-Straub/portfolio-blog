@@ -82,7 +82,9 @@ a:hover{
     font-weight: 666;
     margin-bottom: 10px;
 }
-
+.pages-container {
+    height:100vh
+}
 .post h1 {
     padding: 15px;
     text-align: center;

@@ -2,9 +2,9 @@ import React, { useContext, useEffect } from 'react'
 import BlogContext from '../context/blogContent'
 import { useParams } from 'react-router-dom'
 // import posts from './db.json'
-import{ posts } from '../posts'  
+// import { post } from '../posts'  
 
-const Post = (posts) => {
+const Post = (post) => {
 
   const blogContext = useContext(BlogContext)
   const { getPostsById, currentPost } = blogContext
@@ -13,7 +13,7 @@ const Post = (posts) => {
 
   useEffect(() => {
     getPostsById(postId)
-  },[posts])
+  },[post])
 
 
   return (
@@ -24,7 +24,7 @@ const Post = (posts) => {
           <>
             <div className='post-image' style={{
               width: '100%',
-              height: '600px',
+              height: '300px',
               // backgroundImage: `url('${ currentBlogPost.image}')`,
               backgroundImage: `url('${currentPost.image}')`,
               backgrounPosition: 'center',
@@ -34,6 +34,7 @@ const Post = (posts) => {
               borderTopRightRadius:'5px',
               borderTopLeftRadius: '5px',
               imageResolution: '24dpi',
+             
              
             }}>
            </div>
@@ -47,6 +48,7 @@ const Post = (posts) => {
                 <p>{currentPost.date}</p>
                 <h1> {currentPost.title}</h1>
                 <p> {currentPost.content}</p>
+              
 
 
            </div>

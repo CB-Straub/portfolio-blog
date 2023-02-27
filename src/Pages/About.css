@@ -1,0 +1,11 @@
+.about-content {
+    color: rgb(243, 255, 8);
+    background-color: white;
+    padding-left: 15px;
+    height:100vh;
+    background-image: url('https://images.pexels.com/photos/4296349/pexels-photo-4296349.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.87
+
+}

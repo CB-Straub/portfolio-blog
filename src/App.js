@@ -1,5 +1,5 @@
 //react-router
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import {  Switch, Route } from 'react-router-dom'
 
 //components
 import NavBar from './components/NavBar';
@@ -14,7 +14,7 @@ import Home from './Pages/Home'
 import Post from './Pages/Post'
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-import Merch from './Pages/Merch';
+import Merch from './Pages/Merch/Merch';
  
 
 //css styles
@@ -24,25 +24,35 @@ function App() {
 
  
   return (
-      
-    <BlogProvider>
+     <>
+    
         <div className='App'>
-             <Router>
+        <BlogProvider>
 
                  <NavBar />
                 <Switch>
                     <Route path='/' exact component={Home}/>
                     <Route path='/:postId' exact component={Post}/>
-                    <Route path='/about' exact component={About}/>
-                    <Route path='/merch' exact component={Merch}/>
-                    <Route path='/contact' exact component={Contact}/>
+                    
                 </Switch>
-
-             </Router>
+             
+        </BlogProvider>
          </div>
-         
-  </BlogProvider>
-           
+      
+         <div className='pages-container'>
+                  <Switch>
+                  <Route exact path='/about' component={About}/>
+                  <Route path='/merch' exact component={Merch}/>
+                  <Route path='/contact' exact component={Contact}/>
+                  </Switch>  
+         </div>
+                  
+
+                 
+     
+     
+     </> 
+    
     
   );
 }

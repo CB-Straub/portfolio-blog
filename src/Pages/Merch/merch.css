@@ -1,0 +1,10 @@
+.merch-content {
+    color:whitesmoke;
+    padding: left 15px;
+    text-align: center;
+}
+
+.merch-content p{
+    font-size: 1.6rem;
+    padding-top: 15px
+}
