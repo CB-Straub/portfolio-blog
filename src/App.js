@@ -13,7 +13,7 @@ import BlogProvider from './context/BlogProvider'
 import Home from './Pages/Home'
 import Post from './Pages/Post'
 import About from './Pages/About';
-import Contact from './Pages/Contact';
+import Contact from './Pages/Contact/Contact';
 import Merch from './Pages/Merch/Merch';
  
 
@@ -25,7 +25,7 @@ function App() {
  
   return (
      <>
-    
+       
         <div className='App'>
         <BlogProvider>
 
@@ -35,17 +35,18 @@ function App() {
                     <Route path='/:postId' exact component={Post}/>
                     
                 </Switch>
-             
-        </BlogProvider>
-         </div>
-      
-         <div className='pages-container'>
+                <div className='pages-container'>
                   <Switch>
                   <Route exact path='/about' component={About}/>
                   <Route path='/merch' exact component={Merch}/>
                   <Route path='/contact' exact component={Contact}/>
                   </Switch>  
          </div>
+             
+        </BlogProvider>
+         </div>
+      
+        
                   
 
                  
