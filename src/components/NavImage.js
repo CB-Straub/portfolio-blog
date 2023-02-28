@@ -3,7 +3,7 @@ import React from 'react'
 const NavImage = () => {
   return (
     <div className='navImage'> 
-      <div> React Music Blog </div>
+      <div> Blogdiggity Music Blog </div>
     </div>
   )
 }
