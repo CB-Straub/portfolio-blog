@@ -1,9 +1,14 @@
 .contact-container {
     color: whitesmoke;
     text-align: center;
-    background-image: url('https://images.pexels.com/photos/1591062/pexels-photo-1591062.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-image: url('https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&w=1600');
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    
 
+}
+
+.contact-container h1 {
+    padding-top: 100px;
 }

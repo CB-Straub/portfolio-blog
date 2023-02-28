@@ -4,9 +4,9 @@ import './About.css'
 
 const About = () => {
   return (
-            <div>
+            <div className='about-content'>
 
-              <h1 className='about-content'>This area under construction....check back later!</h1>
+              <h1>We're rocking on this section......coming soon</h1>
 
             </div>
 
